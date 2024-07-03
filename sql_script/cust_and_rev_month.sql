@@ -59,13 +59,25 @@ WITH
 SELECT 
   cm.month,
   cm.num_of_customers AS number_of_customers,
-  COALESCE(rm.rev_by_month, 0) AS rev_by_month
+  (cm.num_of_customers - LAG(cm.num_of_customers) OVER()) * 1.0 / LAG(cm.num_of_customers) OVER() as customers_pct_chg,
+  rm.rev_by_month AS rev_by_month,
+  (rm.rev_by_month - LAG(rm.rev_by_month) OVER()) * 1.0 / LAG(rm.rev_by_month) OVER() as rev_pct_chg
 FROM 
-  cust_month cm
+  cust_month AS cm
 LEFT JOIN 
-  rev_month rm ON cm.month = rm.month
+  rev_month AS rm ON cm.month = rm.month
 ORDER BY 
   cm.month ASC;
 
-SELECT r
+-- Revenue by month year
+SELECT strftime('%m', payment_date) || '-' ||strftime('%Y', payment_date) AS month,
+	   SUM(rental_rate) as revenue,
+       COUNT(*) AS num_of_customers
 FROM rental_list
+GROUP BY strftime('%m', payment_date),strftime('%Y', payment_date)
+
+--
+select *
+FROM rental_list
+  
+
