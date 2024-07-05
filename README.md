@@ -5,12 +5,11 @@
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Queries and Analysis](#queries-and-analysis)
 - [Results](#results)
 - [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
+
+
 
 ## Introduction
 Welcome to my portfolio project where I analyze the Sakila database using SQLite. This project showcases my skills in SQL and data analysis.
@@ -32,16 +31,19 @@ The dataset used in this project is the Sakila database, which includes the foll
 [Sakila Database ERD](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/raw/main/SQLite3%20Sakila%20Sample%20Database%20ERD.png)
 
 ## Installation
-To run this project online. Follow the steps below to set up the project:
+To run this project online using SQLiteonline. Follow the steps below to set up the project:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/sakila-sqlite-analysis.git
+   git clone https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite.git
    cd sakila-sqlite-analysis
 
-2. **Open online sqlite**
-   to open online sqlite online [Sakila Database ERD](https://sqliteonline.com/)
-   open db.file
+2. **Open SQLiteonline:**
+   Visit [SQLiteonline.com](https://sqliteonline.com/)and click on the red circle in the picture to [open the Sakila database](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/blob/main/sakila_db_click.png).
+   
+3. **Open the Sakila data base and import SQL cript**
+   Open SQL script by right-click in the window bar being shown in the [picture ](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/blob/main/open_from_file.png) and import [SQL script](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/tree/main/sql_script) to SQLite server.
 
-3. **Open SQL file script**
-    import SQL file script from [SQL script](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/tree/main/sql_script)
+4. **Run the script individually**
+   
+
