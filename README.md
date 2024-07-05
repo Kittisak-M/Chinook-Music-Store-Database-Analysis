@@ -25,7 +25,7 @@ The dataset used in this project is the Sakila database, which includes the foll
 - `staff`
 - `store`
 
-click [Sakila Database ERD](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/blob/main/pictures/SQLite3%20Sakila%20Sample%20Database%20ERD.png) to view relationship between table
+Click [Sakila Database ERD](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/blob/main/pictures/SQLite3%20Sakila%20Sample%20Database%20ERD.png) to view relationship between the tables
 
 ## Installation
 To run this project online using SQLiteonline. Follow the steps below to set up the project:
@@ -42,7 +42,7 @@ To run this project online using SQLiteonline. Follow the steps below to set up 
    Open SQL script by right-click in the window bar being shown in the [picture](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/blob/main/open_from_file.png) and 
 
 ## Queries and Analysis
- Import [SQL script](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/tree/main/sql_script) to SQLite server by right-clicking see the analysis
+ Import [SQL script](https://github.com/Kittisak-M/Sakila-Database-Analysis-with-SQLite/tree/main/sql_script) to SQLite server to see queries and analysis
 
    
    
