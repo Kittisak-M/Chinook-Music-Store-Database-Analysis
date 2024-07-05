@@ -1,4 +1,6 @@
 # Sakila Database Analysis with SQLite
+![](https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
