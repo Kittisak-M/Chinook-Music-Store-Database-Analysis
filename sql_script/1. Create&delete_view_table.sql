@@ -1,11 +1,27 @@
+/* Start */     
+-- Drop the view tables
+DROP VIEW IF EXISTS customer_list;
+/* END */
+
 /* START */
--- Create Day Return Count as a table view
-CREATE VIEW days_rn_cnt AS 
-    SELECT  rental_duration - return_days AS days_rn,
-       		COUNT(*) AS day_rn_cnt
-    FROM rental_list
-    GROUP BY days_rn
-/* END */    
+DROp VIEW IF EXISTS film_list
+/* END */
+
+/* START */
+DROp VIEW IF EXISTS sales_by_film_category
+/* END */
+
+/* START */
+DROp VIew IF EXISTS sales_by_store
+/* END */
+
+/* START */
+DROp view IF EXISTS staff_list
+/* END */
+
+/* START */
+DROp view IF EXISTS customer_list
+/* END */
 
 /* START */
 -- Create view in the rental table syn
@@ -44,36 +60,14 @@ left join country as cou
 on cou.country_id = ci.country_id
 /* END */
      
-/* Start */     
--- Drop the view tables
-DROP VIEW IF EXISTS customer_list;
-/* END */
-
 /* START */
-DROp VIEW IF EXISTS film_list
-/* END */
-
-/* START */
-DROp VIEW IF EXISTS sales_by_film_category
-/* END */
-
-/* START */
-DROp VIew IF EXISTS sales_by_store
-/* END */
-
-/* START */
-DROp view IF EXISTS staff_list
-/* END */
-
-/* START */
-DROp view IF EXISTS customer_list
-/* END */
-
-
-
-
-
-
+-- Create Day Return Count as a table view
+CREATE VIEW days_rn_cnt AS 
+    SELECT  rental_duration - return_days AS days_rn,
+       		COUNT(*) AS day_rn_cnt
+    FROM rental_list
+    GROUP BY days_rn
+/* END */  
 
 
 
