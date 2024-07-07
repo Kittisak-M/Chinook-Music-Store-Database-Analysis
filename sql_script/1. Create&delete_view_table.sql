@@ -16,11 +16,7 @@ SELECT
     f.title,
     ct.name as category,
     f.rating,
-    CASE 
-        WHEN (julianday(r.return_date) - julianday(r.rental_date)) > CAST((julianday(r.return_date) - julianday(r.rental_date)) AS INTEGER) 
-        THEN CAST((julianday(r.return_date) - julianday(r.rental_date)) AS INTEGER) + 1 
-        ELSE CAST((julianday(r.return_date) - julianday(r.rental_date)) AS INTEGER)
-    END AS return_days,
+    CAST(Julianday(r.return_date) - Julianday(r.rental_date) AS INTEGER) AS return_days,
     f.rental_duration,
     f.rental_rate,    
     p.payment_date,
