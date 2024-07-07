@@ -1,6 +1,7 @@
 /* START */
 SELECT *
 FROM payment
+/* END */
 
 -- Count missing value in the payment table
 SELECT SUM(CASE WHEN payment_id is NULL then 1 else 0 end) as ms_cnt_payment_id,
