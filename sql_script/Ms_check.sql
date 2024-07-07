@@ -1,3 +1,4 @@
+/* START */
 SELECT *
 FROM payment
 
@@ -9,19 +10,27 @@ SELECT SUM(CASE WHEN payment_id is NULL then 1 else 0 end) as ms_cnt_payment_id,
        SUM(CASE WHEN amount is NULL then 1 else 0 end) as ms_cnt_amount,
        SUM(CASE WHEN payment_date is NULL then 1 else 0 end) as ms_cnt_payment_date
 FROM payment
+/* END */
 
+/* START */	
 --Query to check missing value in the rental_id column
 SELECT *
 FROm payment
 WHERE rental_id IS NULL
+/* END */
 
+/* START */
 SELECT *
 FROm film
+/* END */
 
+/* START */	
 --Count rows in the film table
 SELECT COUNT(*)
 FROm film
+/* END */
 
+/* START */
 --Check missing values in the film table
 SELECT SUM(CASE WHEN film_id is NULL then 1 else 0 end) as ms_cnt_film_id,
        SUM(CASE WHEN title is NULL then 1 else 0 end) as ms_cnt_title,
@@ -35,4 +44,5 @@ SELECT SUM(CASE WHEN film_id is NULL then 1 else 0 end) as ms_cnt_film_id,
        SUM(CASE WHEN rating is NULL then 1 else 0 end) as ms_cnt_rating,
        SUM(CASE WHEN special_features is NULL then 1 else 0 end) as ms_cnt_special_features
 FROM film
+/* END */
        
